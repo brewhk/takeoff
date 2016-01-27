@@ -1,0 +1,344 @@
+html {
+	font-family: $default-font-family;
+	color: #ffffff;
+	font-size: 10px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+a,
+a:active,
+a:hover,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.takeoff__footer {
+	font-weight: 700;
+	font-size: 1.2rem;
+	@include responsive(mobile) {
+		text-align: center;
+	    background-color: $white90;
+		text-shadow: none;
+		color: $orange;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	};
+	li {
+		display: inline-block;
+		margin-left: 50px;
+		@include responsive(tablet) {
+			margin-left: 40px;
+		};
+		@include responsive(mobile) {
+			margin-left: 16px;
+    		margin-top: 15px;
+		};
+	}
+}
+
+.takeoff__footerLeft {
+	float: left;
+}
+
+.takeoff__footerRight {
+	float: right;
+}
+
+.takeoff__footerLeft,
+.takeoff__footerRight {
+	@include responsive(mobile) {
+		float: none;
+		margin-top: 24px;
+	};
+}
+
+#header__logo,
+#header__logo-text {
+	display: inline-block;
+	@include responsive(xs) {
+		display: none;
+	};
+	@include responsive(mobile) {
+		display: none;
+	};
+}
+
+#header__logo {
+	@include responsive(tablet) {
+		height: 40px;
+	};
+	@include responsive(desktop) {
+		height: 54px;
+	};
+	@include responsive(large) {
+		height: 54px;
+	};
+	@include responsive(xl) {
+		height: 54px;
+	};
+}
+
+#header__logo-text {
+	color: $orange;
+    font-weight: 900;
+    line-height: 48px;
+    font-size: 38px;
+    height: 54px;
+    vertical-align: bottom;
+    margin-left: 12px;
+    letter-spacing: 1px;
+	@include responsive(tablet) {
+	    line-height: 40px;
+	    font-size: 28px;
+	    height: 40px;
+	};
+	@include responsive(desktop) {
+	};
+	@include responsive(large) {
+	};
+	@include responsive(xl) {
+	};
+}
+
+.takeoff__textblock-container {
+	h3 {
+	    font-size: 2.2rem;
+	    line-height: 2.6rem;
+	    letter-spacing: 0.5px;
+	    margin-top: 0;
+	    margin-bottom: 15px;
+    }
+    p {
+	    font-size: 1.2rem;
+	    line-height: 1.8rem;
+	    letter-spacing: 0.25px;
+    }
+}
+
+.appPrompt {
+	background-color: $white20;
+	text-transform: uppercase;
+	color: $white;
+	letter-spacing: 3px;
+    display: inline-block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 250px;
+    max-width: 100%;
+	.addPrompt__text {
+		display: inline;
+		font-size: 1rem;
+		line-height: 24px;
+    	vertical-align: text-bottom;
+    	margin: 0;
+    	letter-spacing: 3px;
+	}
+}
+
+.decorations {
+	position: absolute;
+	@include responsive(xs) {
+	    display: none;
+	};
+	@include responsive(mobile) {
+	    display: none;
+	};
+}
+
+#decorations__map {
+	@include rotate(30deg);
+	@include responsive(tablet) {
+	    height: 776px;
+	    left: -300px;
+	    top: 320px;
+	};
+	@include responsive(desktop) {
+	    
+	    height: 776px;
+	    left: -250px;
+	    top: 320px;
+	};
+	@include responsive(large) {
+	    height: 776px;
+	    left: -250px;
+	    top: 320px;
+	};
+	@include responsive(xl) {
+	    height: 776px;
+	    left: -250px;
+	    top: 320px;
+	};
+}
+
+#decorations__leaves-1 {
+	@include responsive(tablet) {
+	    height: 875px;
+	    left: 0px;
+	    top: -60px;
+	};
+	@include responsive(desktop) {
+	    height: 1312px;
+	    left: 0px;
+	    top: -180px;
+	};
+	@include responsive(large) {
+	    height: 1312px;
+	    left: 0px;
+	    top: -180px;
+	};
+	@include responsive(xl) {
+	    height: 1312px;
+	    left: 0px;
+	    top: -180px;
+	};
+}
+
+#decorations__leaves-2 {
+	@include responsive(tablet) {
+	    left: 540px;
+	    top: 190px;
+	    width: 499px;
+	};
+	@include responsive(desktop) {
+	    left: 650px;
+	    top: 110px;
+	    width: 748px;
+	};
+	@include responsive(large) {
+	    left: 650px;
+	    top: 110px;
+	    width: 748px;
+	};
+	@include responsive(xl) {
+	    left: 650px;
+	    top: 110px;
+	    width: 748px;
+	};
+}
+
+#decorations__coconuts {
+	@include responsive(tablet) {
+	    left: -60px;
+	    top: 340px;
+	    width: 415px;
+	};
+	@include responsive(desktop) {
+		left: -120px;
+	    top: 180px;
+	    width: 623px;
+	};
+	@include responsive(large) {
+		left: -120px;
+	    top: 180px;
+	    width: 623px;
+	};
+	@include responsive(xl) {
+		left: -120px;
+	    top: 180px;
+	    width: 623px;
+	};
+}
+
+#decorations__coconut {
+	@include responsive(tablet) {
+		right: -40px;
+	    top: 120px;
+	    height: 206px;
+	};
+	@include responsive(desktop) {
+	    right: -60px;
+	    top: 120px;
+	    height: 309px;
+	};
+	@include responsive(large) {
+	    right: -60px;
+	    top: 120px;
+	    height: 309px;
+	};
+	@include responsive(xl) {
+	    right: -60px;
+	    top: 120px;
+	    height: 309px;
+	};
+}
+
+#decorations__leaf-1 {
+	@include responsive(tablet) {
+	    left: -70px;
+	    bottom: -20px;
+	    width: 265px;
+	};
+	@include responsive(desktop) {
+	    left: -20px;
+	    top: 310px;
+	    width: 398px;
+	};
+	@include responsive(large) {
+		left: -20px;
+	    top: 310px;
+	    width: 398px;
+	};
+	@include responsive(xl) {
+	    left: -20px;
+	    top: 310px;
+	    width: 398px;
+	};
+}
+
+#decorations__leaf-2 {
+	@include responsive(tablet) {
+	    width: 255px;
+	    left: 210px;
+	    top: 10px;
+	};
+	@include responsive(desktop) {
+	    width: 383px;
+	    left: 420px;
+	    top: 20px;
+	};
+	@include responsive(large) {
+	    width: 383px;
+	    left: 420px;
+	    top: 20px;
+	};
+	@include responsive(xl) {
+	    width: 383px;
+	    left: 420px;
+	    top: 20px;
+	};
+}
+
+#decorations__leaf-3 {
+	@include responsive(tablet) {
+		width: 281px;
+	    right: 0px;
+	    top: 10px;
+	};
+	@include responsive(desktop) {
+	    width: 281px;
+	    right: 0px;
+	    top: 10px;
+	};
+	@include responsive(large) {
+	    width: 281px;
+	    right: 0px;
+	    top: 10px;
+	};
+	@include responsive(xl) {
+	    width: 281px;
+	    right: 0px;
+	    top: 10px;
+	};
+}

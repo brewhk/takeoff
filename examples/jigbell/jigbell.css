@@ -1,0 +1,650 @@
+@font-face {
+  font-family: 'Lato';
+  font-weight: 100;
+  font-style: normal;
+  src: url("assets/fonts/lato-hairline-webfont.eot");
+  src: url("assets/fonts/lato-hairline-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-hairline-webfont.woff") format("woff"), url("assets/fonts/lato-hairline-webfont.ttf") format("truetype"), url("assets/fonts/lato-hairline-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 100;
+  font-style: italic;
+  src: url("assets/fonts/lato-hairlineitalic-webfont.eot");
+  src: url("assets/fonts/lato-hairlineitalic-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-hairlineitalic-webfont.woff") format("woff"), url("assets/fonts/lato-hairlineitalic-webfont.ttf") format("truetype"), url("assets/fonts/lato-hairlineitalic-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 200;
+  font-style: normal;
+  src: url("assets/fonts/lato-thin-webfont.eot");
+  src: url("assets/fonts/lato-thin-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-thin-webfont.woff") format("woff"), url("assets/fonts/lato-thin-webfont.ttf") format("truetype"), url("assets/fonts/lato-thin-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 200;
+  font-style: italic;
+  src: url("assets/fonts/lato-thinitalic-webfont.eot");
+  src: url("assets/fonts/lato-thinitalic-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-thinitalic-webfont.woff") format("woff"), url("assets/fonts/lato-thinitalic-webfont.ttf") format("truetype"), url("assets/fonts/lato-thinitalic-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-style: normal;
+  src: url("assets/fonts/lato-light-webfont.eot");
+  src: url("assets/fonts/lato-light-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-light-webfont.woff") format("woff"), url("assets/fonts/lato-light-webfont.ttf") format("truetype"), url("assets/fonts/lato-light-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-style: italic;
+  src: url("assets/fonts/lato-lightitalic-webfont.eot");
+  src: url("assets/fonts/lato-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-lightitalic-webfont.woff") format("woff"), url("assets/fonts/lato-lightitalic-webfont.ttf") format("truetype"), url("assets/fonts/lato-lightitalic-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: normal;
+  src: url("assets/fonts/lato-regular-webfont.eot");
+  src: url("assets/fonts/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-regular-webfont.woff") format("woff"), url("assets/fonts/lato-regular-webfont.ttf") format("truetype"), url("assets/fonts/lato-regular-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: italic;
+  src: url("assets/fonts/lato-italic-webfont.eot");
+  src: url("assets/fonts/lato-italic-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-italic-webfont.woff") format("woff"), url("assets/fonts/lato-italic-webfont.ttf") format("truetype"), url("assets/fonts/lato-italic-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 500;
+  font-style: normal;
+  src: url("assets/fonts/lato-medium-webfont.eot");
+  src: url("assets/fonts/lato-medium-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-medium-webfont.woff") format("woff"), url("assets/fonts/lato-medium-webfont.ttf") format("truetype"), url("assets/fonts/lato-medium-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 500;
+  font-style: italic;
+  src: url("assets/fonts/lato-mediumitalic-webfont.eot");
+  src: url("assets/fonts/lato-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-mediumitalic-webfont.woff") format("woff"), url("assets/fonts/lato-mediumitalic-webfont.ttf") format("truetype"), url("assets/fonts/lato-mediumitalic-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 600;
+  font-style: normal;
+  src: url("assets/fonts/lato-semibold-webfont.eot");
+  src: url("assets/fonts/lato-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-semibold-webfont.woff") format("woff"), url("assets/fonts/lato-semibold-webfont.ttf") format("truetype"), url("assets/fonts/lato-semibold-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 600;
+  font-style: italic;
+  src: url("assets/fonts/lato-semibolditalic-webfont.eot");
+  src: url("assets/fonts/lato-semibolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-semibolditalic-webfont.woff") format("woff"), url("assets/fonts/lato-semibolditalic-webfont.ttf") format("truetype"), url("assets/fonts/lato-semibolditalic-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-style: normal;
+  src: url("assets/fonts/lato-bold-webfont.eot");
+  src: url("assets/fonts/lato-bold-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-bold-webfont.woff") format("woff"), url("assets/fonts/lato-bold-webfont.ttf") format("truetype"), url("assets/fonts/lato-bold-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-style: italic;
+  src: url("assets/fonts/lato-bolditalic-webfont.eot");
+  src: url("assets/fonts/lato-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-bolditalic-webfont.woff") format("woff"), url("assets/fonts/lato-bolditalic-webfont.ttf") format("truetype"), url("assets/fonts/lato-bolditalic-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 800;
+  font-style: normal;
+  src: url("assets/fonts/lato-heavy-webfont.eot");
+  src: url("assets/fonts/lato-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-heavy-webfont.woff") format("woff"), url("assets/fonts/lato-heavy-webfont.ttf") format("truetype"), url("assets/fonts/lato-heavy-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 800;
+  font-style: italic;
+  src: url("assets/fonts/lato-heavyitalic-webfont.eot");
+  src: url("assets/fonts/lato-heavyitalic-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-heavyitalic-webfont.woff") format("woff"), url("assets/fonts/lato-heavyitalic-webfont.ttf") format("truetype"), url("assets/fonts/lato-heavyitalic-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 900;
+  font-style: normal;
+  src: url("assets/fonts/lato-black-webfont.eot");
+  src: url("assets/fonts/lato-black-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-black-webfont.woff") format("woff"), url("assets/fonts/lato-black-webfont.ttf") format("truetype"), url("assets/fonts/lato-black-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 900;
+  font-style: italic;
+  src: url("assets/fonts/lato-blackitalic-webfont.eot");
+  src: url("assets/fonts/lato-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/lato-blackitalic-webfont.woff") format("woff"), url("assets/fonts/lato-blackitalic-webfont.ttf") format("truetype"), url("assets/fonts/lato-blackitalic-webfont.svg#webfont") format("svg");
+}
+/* line 1, sass/_global.scss */
+html {
+  font-family: "Lato", Georgia, serif;
+  color: #ffffff;
+  font-size: 10px;
+}
+
+/* line 7, sass/_global.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* line 16, sass/_global.scss */
+a,
+a:active,
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 25, sass/_global.scss */
+.takeoff__footer {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 25, sass/_global.scss */
+  .takeoff__footer {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-shadow: none;
+    color: #ff5811;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+/* line 36, sass/_global.scss */
+.takeoff__footer li {
+  display: inline-block;
+  margin-left: 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 36, sass/_global.scss */
+  .takeoff__footer li {
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 36, sass/_global.scss */
+  .takeoff__footer li {
+    margin-left: 16px;
+    margin-top: 15px;
+  }
+}
+
+/* line 49, sass/_global.scss */
+.takeoff__footerLeft {
+  float: left;
+}
+
+/* line 53, sass/_global.scss */
+.takeoff__footerRight {
+  float: right;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 57, sass/_global.scss */
+  .takeoff__footerLeft,
+  .takeoff__footerRight {
+    float: none;
+    margin-top: 24px;
+  }
+}
+
+/* line 65, sass/_global.scss */
+#header__logo,
+#header__logo-text {
+  display: inline-block;
+}
+@media screen and (max-width: 479px) {
+  /* line 65, sass/_global.scss */
+  #header__logo,
+  #header__logo-text {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 65, sass/_global.scss */
+  #header__logo,
+  #header__logo-text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 76, sass/_global.scss */
+  #header__logo {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 76, sass/_global.scss */
+  #header__logo {
+    height: 54px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 76, sass/_global.scss */
+  #header__logo {
+    height: 54px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* line 76, sass/_global.scss */
+  #header__logo {
+    height: 54px;
+  }
+}
+
+/* line 91, sass/_global.scss */
+#header__logo-text {
+  color: #ff5811;
+  font-weight: 900;
+  line-height: 48px;
+  font-size: 38px;
+  height: 54px;
+  vertical-align: bottom;
+  margin-left: 12px;
+  letter-spacing: 1px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 91, sass/_global.scss */
+  #header__logo-text {
+    line-height: 40px;
+    font-size: 28px;
+    height: 40px;
+  }
+}
+
+/* line 114, sass/_global.scss */
+.takeoff__textblock-container h3 {
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+/* line 121, sass/_global.scss */
+.takeoff__textblock-container p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.25px;
+}
+
+/* line 128, sass/_global.scss */
+.appPrompt {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 3px;
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 250px;
+  max-width: 100%;
+}
+/* line 140, sass/_global.scss */
+.appPrompt .addPrompt__text {
+  display: inline;
+  font-size: 1rem;
+  line-height: 24px;
+  vertical-align: text-bottom;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+/* line 150, sass/_global.scss */
+.decorations {
+  position: absolute;
+}
+@media screen and (max-width: 479px) {
+  /* line 150, sass/_global.scss */
+  .decorations {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 150, sass/_global.scss */
+  .decorations {
+    display: none;
+  }
+}
+
+/* line 160, sass/_global.scss */
+#decorations__map {
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 160, sass/_global.scss */
+  #decorations__map {
+    height: 776px;
+    left: -300px;
+    top: 320px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 160, sass/_global.scss */
+  #decorations__map {
+    height: 776px;
+    left: -250px;
+    top: 320px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 160, sass/_global.scss */
+  #decorations__map {
+    height: 776px;
+    left: -250px;
+    top: 320px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* line 160, sass/_global.scss */
+  #decorations__map {
+    height: 776px;
+    left: -250px;
+    top: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 185, sass/_global.scss */
+  #decorations__leaves-1 {
+    height: 875px;
+    left: 0px;
+    top: -60px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 185, sass/_global.scss */
+  #decorations__leaves-1 {
+    height: 1312px;
+    left: 0px;
+    top: -180px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 185, sass/_global.scss */
+  #decorations__leaves-1 {
+    height: 1312px;
+    left: 0px;
+    top: -180px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* line 185, sass/_global.scss */
+  #decorations__leaves-1 {
+    height: 1312px;
+    left: 0px;
+    top: -180px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 208, sass/_global.scss */
+  #decorations__leaves-2 {
+    left: 540px;
+    top: 190px;
+    width: 499px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 208, sass/_global.scss */
+  #decorations__leaves-2 {
+    left: 650px;
+    top: 110px;
+    width: 748px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 208, sass/_global.scss */
+  #decorations__leaves-2 {
+    left: 650px;
+    top: 110px;
+    width: 748px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* line 208, sass/_global.scss */
+  #decorations__leaves-2 {
+    left: 650px;
+    top: 110px;
+    width: 748px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 231, sass/_global.scss */
+  #decorations__coconuts {
+    left: -60px;
+    top: 340px;
+    width: 415px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 231, sass/_global.scss */
+  #decorations__coconuts {
+    left: -120px;
+    top: 180px;
+    width: 623px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 231, sass/_global.scss */
+  #decorations__coconuts {
+    left: -120px;
+    top: 180px;
+    width: 623px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* line 231, sass/_global.scss */
+  #decorations__coconuts {
+    left: -120px;
+    top: 180px;
+    width: 623px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 254, sass/_global.scss */
+  #decorations__coconut {
+    right: -40px;
+    top: 120px;
+    height: 206px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 254, sass/_global.scss */
+  #decorations__coconut {
+    right: -60px;
+    top: 120px;
+    height: 309px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 254, sass/_global.scss */
+  #decorations__coconut {
+    right: -60px;
+    top: 120px;
+    height: 309px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* line 254, sass/_global.scss */
+  #decorations__coconut {
+    right: -60px;
+    top: 120px;
+    height: 309px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 277, sass/_global.scss */
+  #decorations__leaf-1 {
+    left: -70px;
+    bottom: -20px;
+    width: 265px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 277, sass/_global.scss */
+  #decorations__leaf-1 {
+    left: -20px;
+    top: 310px;
+    width: 398px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 277, sass/_global.scss */
+  #decorations__leaf-1 {
+    left: -20px;
+    top: 310px;
+    width: 398px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* line 277, sass/_global.scss */
+  #decorations__leaf-1 {
+    left: -20px;
+    top: 310px;
+    width: 398px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 300, sass/_global.scss */
+  #decorations__leaf-2 {
+    width: 255px;
+    left: 210px;
+    top: 10px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 300, sass/_global.scss */
+  #decorations__leaf-2 {
+    width: 383px;
+    left: 420px;
+    top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 300, sass/_global.scss */
+  #decorations__leaf-2 {
+    width: 383px;
+    left: 420px;
+    top: 20px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* line 300, sass/_global.scss */
+  #decorations__leaf-2 {
+    width: 383px;
+    left: 420px;
+    top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 323, sass/_global.scss */
+  #decorations__leaf-3 {
+    width: 281px;
+    right: 0px;
+    top: 10px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 323, sass/_global.scss */
+  #decorations__leaf-3 {
+    width: 281px;
+    right: 0px;
+    top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 323, sass/_global.scss */
+  #decorations__leaf-3 {
+    width: 281px;
+    right: 0px;
+    top: 10px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* line 323, sass/_global.scss */
+  #decorations__leaf-3 {
+    width: 281px;
+    right: 0px;
+    top: 10px;
+  }
+}
+
+/* line 1, sass/_mailchimp.scss */
+label[for="mce-EMAIL"] {
+  display: none;
+}
+
+/* line 5, sass/_mailchimp.scss */
+#mce-EMAIL,
+#mc-embedded-subscribe {
+  border: none;
+  outline: none;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/* line 12, sass/_mailchimp.scss */
+#mce-EMAIL:hover, #mce-EMAIL:focus,
+#mc-embedded-subscribe:hover,
+#mc-embedded-subscribe:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 18, sass/_mailchimp.scss */
+#mce-EMAIL {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #333333;
+  font-family: "Lato", Georgia, serif;
+}
+
+/* line 27, sass/_mailchimp.scss */
+#mc-embedded-subscribe {
+  width: 100%;
+  margin-top: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 6px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Lato", Georgia, serif;
+  font-size: 1rem;
+}

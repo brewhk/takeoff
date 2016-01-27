@@ -1,0 +1,185 @@
+@import "compass/css3/transition";
+
+///////////////
+/// GENERAL ///
+///////////////
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	@include transition-property(background-color);
+	@include transition-duration(700ms);
+	@include transition-timing-function(ease-in);
+}
+
+body {
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+
+////////////////////////
+/// HEADERS & FOOTER ///
+////////////////////////
+
+.takeoff__header,
+.takeoff__footer {
+	position: fixed;
+	width: 100%;
+	padding-left: 8%;
+	padding-right: 8%;
+	z-index: 10;
+}
+
+.takeoff__header {
+	top: 20px;
+}
+
+.takeoff__footer {
+	bottom: 40px;
+	@include responsive(xs) {
+		display: none;
+	};
+	@include responsive(mobile) {
+		bottom: 0;
+	    height: 140px;
+	    background-color: white;
+	};
+}
+
+////////////////
+/// CONTENTS ///
+////////////////
+
+.takeoff__content-centerer-outer {
+	z-index: 5;
+	position: fixed;
+	display: table;
+	width: 100%;
+    height: 100vh;
+}
+
+.takeoff__content-centerer-inner {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.takeoff__content-container {
+	margin-left: auto;
+	margin-right: auto;
+    position: relative;
+	@include responsive(xs) {
+	    width: 100%;
+	    height: 100vh;
+	};
+	@include responsive(mobile) {
+	    width: 100%;
+	    height: 100vh;
+	};
+	@include responsive(tablet) {
+	    width: 600px;
+	    height: 420px;
+	};
+	@include responsive(desktop) {
+	    width: 600px;
+	    height: 420px;
+	};
+	@include responsive(large) {
+	    width: 600px;
+	    height: 420px;
+	};
+}
+
+//////////////
+/// DEVICE ///
+//////////////
+
+.takeoff__device {
+	z-index: 10;
+    left: 0;
+    top: 0;
+    position: absolute;
+
+	@include responsive(xs) {
+	    top: 320px;
+	    left: calc(50% - 110px);
+	}
+	@include responsive(mobile) {
+	    top: 280px;
+	    left: calc(50% - 110px);
+	}
+}
+
+// You can choose your device from the "`/sass/devices/` directory"
+@import "devices/iphone6Plus";
+
+//////////////////
+/// TEXT BLOCK ///
+//////////////////
+
+$textblock-height: 200px;
+
+.takeoff__texts {
+    right: 0;
+    position: absolute;
+	overflow: hidden;
+    text-align: left;
+	z-index: 5;
+    padding-top: $text-fade-distance;
+    padding-bottom: $text-fade-distance;
+    top: 60px;
+    width: 310px;
+    height: $textblock-height + (2 * $text-fade-distance);
+    @include responsive(xs) {
+    	top: 0;
+	    width: 100%;
+	    padding-left: 30px;
+	    padding-right: 30px;
+	    text-align: center;
+    }
+	@include responsive(mobile) {
+    	top: 0px;
+	    width: 100%;
+	    padding-left: 60px;
+	    padding-right: 60px;
+	    text-align: center;
+    }
+}
+
+.takeoff__textblock-container {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.takeoff__textblock {
+	position: absolute;
+	height: 100%;
+	top: $textblock-height + (2 * $text-fade-distance);
+}
+
+///////////////////
+/// DECORATIONS ///
+///////////////////
+
+.takeoff__backgrounds {
+	z-index: 1;
+}
+
+.takeoff__backgroundBlock {
+	position: relative;
+	overflow: visible;
+	min-height: 100vh;
+	height: 6000px;
+	&:last-of-type {
+		height: 100vh;
+		overflow: hidden;
+	}
+}

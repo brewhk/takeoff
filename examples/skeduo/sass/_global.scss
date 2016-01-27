@@ -1,0 +1,360 @@
+html {
+	font-family: $default-font-family;
+	color: $white;
+	font-size: 10px;
+}
+
+body {
+	background-image: url(./assets/images/page-background.jpg);
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+a,
+a:active,
+a:hover,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.takeoff__footer {
+	font-weight: 700;
+	font-size: 1.2rem;
+	text-shadow: 0px 1px 0px $purple;
+	@include responsive(mobile) {
+		text-align: center;
+	    background-color: $purple90;
+		text-shadow: none;
+		color: $gold;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	};
+	li {
+		display: inline-block;
+		margin-left: 50px;
+		@include responsive(tablet) {
+			margin-left: 40px;
+		};
+		@include responsive(mobile) {
+			margin-left: 16px;
+    		margin-top: 15px;
+		};
+	}
+}
+
+.takeoff__footerLeft {
+	float: left;
+}
+
+.takeoff__footerRight {
+	float: right;
+}
+
+.takeoff__footerLeft,
+.takeoff__footerRight {
+	@include responsive(mobile) {
+		float: none;
+		margin-top: 24px;
+	};
+}
+
+#header__logo {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	@include responsive(xs) {
+		display: none;
+	};
+	@include responsive(mobile) {
+		display: none;
+	};
+	@include responsive(tablet) {
+		height: 76px;
+	};
+	@include responsive(desktop) {
+		height: 76px;
+	};
+	@include responsive(large) {
+		height: 76px;
+	};
+	@include responsive(xl) {
+		height: 114px;
+	    margin-top: 10px;
+	};
+}
+
+.takeoff__textblock-container {
+	h3 {
+	    font-size: 2.2rem;
+	    line-height: 2.6rem;
+	    letter-spacing: 0.5px;
+	    margin-top: 0;
+	    margin-bottom: 15px;
+    }
+    p {
+	    font-size: 1.2rem;
+	    line-height: 1.8rem;
+	    letter-spacing: 0.25px;
+    }
+}
+
+.appPrompt {
+	background-color: $gold20;
+	text-transform: uppercase;
+	color: $gold;
+	letter-spacing: 3px;
+    display: inline-block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+	.addPrompt__text {
+		display: inline;
+		font-size: 1rem;
+		line-height: 24px;
+    	vertical-align: text-bottom;
+    	margin: 0;
+    	letter-spacing: 3px;
+	}
+}
+
+.app-icon {
+	display: inline-block;
+	background-size: cover;
+	cursor: pointer;
+	margin-left: 15px;
+	&.apple-icon {
+		background-image: url(./assets/images/icons/apple-icon.png);
+		height: 20px;
+		width: 16.5px;
+	}
+	&.android-icon {
+		background-image: url(./assets/images/icons/android-icon.png);
+		height: 20px;
+		width: 16.5px;
+	}
+	&.web-icon {
+		background-image: url(./assets/images/icons/web-icon.png);
+		height: 20px;
+		width: 20px;
+	}
+	@include responsive(xl) {
+		&.apple-icon {
+			height: 24px;
+			width: 20px;
+		}
+		&.android-icon {
+			height: 24px;
+			width: 20px;
+		}
+		&.web-icon {
+			height: 24px;
+			width: 24px;
+		}
+	}
+}
+
+.decorations {
+	position: absolute;
+	@include responsive(xs) {
+	    display: none;
+	};
+	@include responsive(mobile) {
+	    display: none;
+	};
+}
+
+#decorations__paperPad {
+	@include responsive(tablet) {
+	    height: 720px;
+	    right: -490px;
+	    top: -180px;
+	};
+	@include responsive(desktop) {
+	    height: 800px;
+	    right: -480px;
+	    top: -200px;
+	};
+	@include responsive(large) {
+		height: 910px;
+	    right: -410px;
+	    top: -250px;
+	};
+	@include responsive(xl) {
+		width: 1424px;
+		height: 1489.5px;
+    	right: -850px;
+    	top: -370px;
+	};
+}
+
+#decorations__paperPad2 {
+	@include responsive(tablet) {
+	    height: 640px;
+	    left: -300px;
+	    top: 200px;
+	};
+	@include responsive(desktop) {
+	    height: 720px;
+	    left: -300px;
+	    top: 200px;
+	};
+	@include responsive(large) {
+	    height: 780px;
+	    left: -370px;
+	    top: 90px;
+	};
+}
+
+#decorations__diningPlate {
+	@include responsive(tablet) {
+	    width: 800px;
+	    top: 300px;
+	    right: -460px;
+	}
+	@include responsive(desktop) {
+	    width: 950px;
+	    top: 270px;
+	    right: -500px;
+	}
+	@include responsive(large) {
+	    width: 1093px;
+	    top: 270px;
+	    right: -500px;
+	}
+}
+
+#decorations__yellowPlate {
+	@include responsive(tablet) {
+	    height: 447px;
+	    top: -120px;
+	    left: -160px;
+	}
+	@include responsive(desktop) {
+	    height: 447px;
+	    top: -120px;
+	    left: -160px;
+	}
+	@include responsive(large) {
+	    width: 515px;
+	    top: -150px;
+	    left: -210px;
+	}
+}
+
+#decorations__headphones {
+	@include responsive(tablet) {
+	    width: 360px;
+	    top: -180px;
+	    right: -90px;
+	}
+	@include responsive(desktop) {
+	    width: 442px;
+	    top: -110px;
+	    right: -220px;
+	}
+	@include responsive(large) {
+		width: 512px;
+		top: -100px;
+		right: -200px;
+	}
+}
+
+#decorations__microphone {
+	@include responsive(tablet) {
+	    height: 420px;
+	    top: 230px;
+	    left: -10px;
+	}
+	@include responsive(desktop) {
+		height: 557px;
+	    top: 300px;
+	    left: 40px;
+	}
+	@include responsive(large) {
+		height: 557px;
+	    top: 300px;
+	    left: 40px;
+	}
+}
+
+#decorations__money-left {
+	@include responsive(tablet) {
+	    height: 420px;
+	    top: 0px;
+	    left: -160px;
+	}
+	@include responsive(desktop) {
+	    height: 500px;
+	    top: -160px;
+	    left: -200px;
+	}
+	@include responsive(large) {
+	    height: 541px;
+	    top: -160px;
+	    left: -200px;
+	}
+}
+
+#decorations__money-right {
+	@include responsive(tablet) {
+	    width: 420px;
+	    top: 300px;
+	    right: -130px;
+	}
+	@include responsive(desktop) {
+	    width: 480px;
+	    top: 260px;
+	    right: -80px;
+	}
+	@include responsive(large) {
+	    width: 520px;
+	    top: 230px;
+	    right: -50px;
+	}
+}
+
+#decorations__gloves-left {
+	@include responsive(tablet) {
+	    height: 560px;
+	    top: 200px;
+	    left: -100px;
+	}
+	@include responsive(desktop) {
+	    height: 600px;
+	    top: 190px;
+	    left: -70px;
+	}
+	@include responsive(large) {
+    	height: 800px;
+	    top: 80px;
+	    left: -140px;
+	}
+}
+
+#decorations__gloves-right {
+	@include responsive(tablet) {
+	    height: 420px;
+	    bottom: -230px;
+	    right: -140px;
+	}
+	@include responsive(desktop) {
+	    height: 420px;
+	    bottom: -270px;
+	    right: -140px;
+	}
+	@include responsive(large) {
+	    height: 480px;
+	    bottom: -300px;
+	    right: -120px;
+	}
+}

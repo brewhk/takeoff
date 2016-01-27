@@ -1,0 +1,247 @@
+/* line 7, sass/_global.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -moz-transition-duration: 700ms;
+  -o-transition-duration: 700ms;
+  -webkit-transition-duration: 700ms;
+  transition-duration: 700ms;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 17, sass/_global.scss */
+body {
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* line 22, sass/_global.scss */
+div {
+  box-sizing: border-box;
+}
+
+/* line 31, sass/_global.scss */
+.takeoff__header,
+.takeoff__footer {
+  position: fixed;
+  width: 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+  z-index: 10;
+}
+
+/* line 40, sass/_global.scss */
+.takeoff__header {
+  top: 20px;
+}
+
+/* line 44, sass/_global.scss */
+.takeoff__footer {
+  bottom: 40px;
+}
+@media screen and (max-width: 479px) {
+  /* line 44, sass/_global.scss */
+  .takeoff__footer {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 44, sass/_global.scss */
+  .takeoff__footer {
+    bottom: 0;
+    height: 140px;
+    background-color: white;
+  }
+}
+
+/* line 60, sass/_global.scss */
+.takeoff__content-centerer-outer {
+  z-index: 5;
+  position: fixed;
+  display: table;
+  width: 100%;
+  height: 100vh;
+}
+
+/* line 68, sass/_global.scss */
+.takeoff__content-centerer-inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 74, sass/_global.scss */
+.takeoff__content-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+@media screen and (max-width: 479px) {
+  /* line 74, sass/_global.scss */
+  .takeoff__content-container {
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 74, sass/_global.scss */
+  .takeoff__content-container {
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 74, sass/_global.scss */
+  .takeoff__content-container {
+    width: 600px;
+    height: 420px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 74, sass/_global.scss */
+  .takeoff__content-container {
+    width: 600px;
+    height: 420px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 74, sass/_global.scss */
+  .takeoff__content-container {
+    width: 600px;
+    height: 420px;
+  }
+}
+
+/* line 104, sass/_global.scss */
+.takeoff__device {
+  z-index: 10;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+@media screen and (max-width: 479px) {
+  /* line 104, sass/_global.scss */
+  .takeoff__device {
+    top: 320px;
+    left: calc(50% - 110px);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 104, sass/_global.scss */
+  .takeoff__device {
+    top: 280px;
+    left: calc(50% - 110px);
+  }
+}
+
+/* line 5, sass/devices/_iphone6Plus.scss */
+.takeoff__device {
+  height: 450px;
+}
+
+/* line 9, sass/devices/_iphone6Plus.scss */
+.takeoff__screens {
+  overflow: hidden;
+  position: absolute;
+  z-index: 5;
+  width: 198px;
+  height: 346px;
+  left: 12px;
+  top: 51px;
+}
+/* line 17, sass/devices/_iphone6Plus.scss */
+.takeoff__screens img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 346px;
+}
+@media screen and (max-width: 479px) {
+  /* line 9, sass/devices/_iphone6Plus.scss */
+  .takeoff__screens {
+    left: calc(50% - 98px);
+    top: 371px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 9, sass/devices/_iphone6Plus.scss */
+  .takeoff__screens {
+    left: calc(50% - 98px);
+    top: 331px;
+  }
+}
+
+/* line 129, sass/_global.scss */
+.takeoff__texts {
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+  text-align: left;
+  z-index: 5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  top: 60px;
+  width: 310px;
+  height: 300px;
+}
+@media screen and (max-width: 479px) {
+  /* line 129, sass/_global.scss */
+  .takeoff__texts {
+    top: 0;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 129, sass/_global.scss */
+  .takeoff__texts {
+    top: 0px;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+  }
+}
+
+/* line 156, sass/_global.scss */
+.takeoff__textblock-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 162, sass/_global.scss */
+.takeoff__textblock {
+  position: absolute;
+  height: 100%;
+  top: 300px;
+}
+
+/* line 172, sass/_global.scss */
+.takeoff__backgrounds {
+  z-index: 1;
+}
+
+/* line 176, sass/_global.scss */
+.takeoff__backgroundBlock {
+  position: relative;
+  overflow: visible;
+  min-height: 100vh;
+  height: 6000px;
+}
+/* line 181, sass/_global.scss */
+.takeoff__backgroundBlock:last-of-type {
+  height: 100vh;
+  overflow: hidden;
+}

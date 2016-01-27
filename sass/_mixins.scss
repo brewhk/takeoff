@@ -1,0 +1,27 @@
+@import "compass/css3/transform";
+
+@mixin chevron($width, $color, $rotation) {
+	padding: 0px;
+	height: $width / 2;
+	width: $width;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 10%;
+		width: 51%;
+		background: $color;
+		@include skew(0deg, $rotation + deg);
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 10%;
+		width: 50%;
+		background: $color;
+		@include skew(0deg, -$rotation + deg);
+	}
+}

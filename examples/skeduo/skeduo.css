@@ -1,0 +1,514 @@
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-weight: normal;
+  font-style: normal;
+  src: url("assets/fonts/quattrocentosans-regular-webfont.eot");
+  src: url("assets/fonts/quattrocentosans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/quattrocentosans-regular-webfont.woff") format("woff"), url("assets/fonts/quattrocentosans-regular-webfont.ttf") format("truetype"), url("assets/fonts/quattrocentosans-regular-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-weight: normal;
+  font-style: italic;
+  src: url("assets/fonts/quattrocentosans-italic-webfont.eot");
+  src: url("assets/fonts/quattrocentosans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/quattrocentosans-italic-webfont.woff") format("woff"), url("assets/fonts/quattrocentosans-italic-webfont.ttf") format("truetype"), url("assets/fonts/quattrocentosans-italic-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-weight: bold;
+  font-style: normal;
+  src: url("assets/fonts/quattrocentosans-bold-webfont.eot");
+  src: url("assets/fonts/quattrocentosans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/quattrocentosans-bold-webfont.woff") format("woff"), url("assets/fonts/quattrocentosans-bold-webfont.ttf") format("truetype"), url("assets/fonts/quattrocentosans-bold-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-weight: bold;
+  font-style: italic;
+  src: url("assets/fonts/quattrocentosans-bolditalic-webfont.eot");
+  src: url("assets/fonts/quattrocentosans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/quattrocentosans-bolditalic-webfont.woff") format("woff"), url("assets/fonts/quattrocentosans-bolditalic-webfont.ttf") format("truetype"), url("assets/fonts/quattrocentosans-bolditalic-webfont.svg#webfont") format("svg");
+}
+/* line 1, sass/_global.scss */
+html {
+  font-family: "Quattrocento Sans", Georgia, serif;
+  color: #E7DFE4;
+  font-size: 10px;
+}
+
+/* line 7, sass/_global.scss */
+body {
+  background-image: url(./assets/images/page-background.jpg);
+}
+
+/* line 11, sass/_global.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* line 20, sass/_global.scss */
+a,
+a:active,
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 29, sass/_global.scss */
+.takeoff__footer {
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-shadow: 0px 1px 0px #55444F;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 29, sass/_global.scss */
+  .takeoff__footer {
+    text-align: center;
+    background-color: rgba(85, 68, 79, 0.9);
+    text-shadow: none;
+    color: #CDB399;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+/* line 41, sass/_global.scss */
+.takeoff__footer li {
+  display: inline-block;
+  margin-left: 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 41, sass/_global.scss */
+  .takeoff__footer li {
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 41, sass/_global.scss */
+  .takeoff__footer li {
+    margin-left: 16px;
+    margin-top: 15px;
+  }
+}
+
+/* line 54, sass/_global.scss */
+.takeoff__footerLeft {
+  float: left;
+}
+
+/* line 58, sass/_global.scss */
+.takeoff__footerRight {
+  float: right;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 62, sass/_global.scss */
+  .takeoff__footerLeft,
+  .takeoff__footerRight {
+    float: none;
+    margin-top: 24px;
+  }
+}
+
+/* line 70, sass/_global.scss */
+#header__logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 479px) {
+  /* line 70, sass/_global.scss */
+  #header__logo {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 70, sass/_global.scss */
+  #header__logo {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 70, sass/_global.scss */
+  #header__logo {
+    height: 76px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 70, sass/_global.scss */
+  #header__logo {
+    height: 76px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 70, sass/_global.scss */
+  #header__logo {
+    height: 76px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* line 70, sass/_global.scss */
+  #header__logo {
+    height: 114px;
+    margin-top: 10px;
+  }
+}
+
+/* line 96, sass/_global.scss */
+.takeoff__textblock-container h3 {
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+/* line 103, sass/_global.scss */
+.takeoff__textblock-container p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.25px;
+}
+
+/* line 110, sass/_global.scss */
+.appPrompt {
+  background-color: rgba(205, 179, 153, 0.2);
+  text-transform: uppercase;
+  color: #CDB399;
+  letter-spacing: 3px;
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* line 120, sass/_global.scss */
+.appPrompt .addPrompt__text {
+  display: inline;
+  font-size: 1rem;
+  line-height: 24px;
+  vertical-align: text-bottom;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+/* line 130, sass/_global.scss */
+.app-icon {
+  display: inline-block;
+  background-size: cover;
+  cursor: pointer;
+  margin-left: 15px;
+}
+/* line 135, sass/_global.scss */
+.app-icon.apple-icon {
+  background-image: url(./assets/images/icons/apple-icon.png);
+  height: 20px;
+  width: 16.5px;
+}
+/* line 140, sass/_global.scss */
+.app-icon.android-icon {
+  background-image: url(./assets/images/icons/android-icon.png);
+  height: 20px;
+  width: 16.5px;
+}
+/* line 145, sass/_global.scss */
+.app-icon.web-icon {
+  background-image: url(./assets/images/icons/web-icon.png);
+  height: 20px;
+  width: 20px;
+}
+@media screen and (min-width: 1920px) {
+  /* line 151, sass/_global.scss */
+  .app-icon.apple-icon {
+    height: 24px;
+    width: 20px;
+  }
+  /* line 155, sass/_global.scss */
+  .app-icon.android-icon {
+    height: 24px;
+    width: 20px;
+  }
+  /* line 159, sass/_global.scss */
+  .app-icon.web-icon {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+/* line 166, sass/_global.scss */
+.decorations {
+  position: absolute;
+}
+@media screen and (max-width: 479px) {
+  /* line 166, sass/_global.scss */
+  .decorations {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 166, sass/_global.scss */
+  .decorations {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 176, sass/_global.scss */
+  #decorations__paperPad {
+    height: 720px;
+    right: -490px;
+    top: -180px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 176, sass/_global.scss */
+  #decorations__paperPad {
+    height: 800px;
+    right: -480px;
+    top: -200px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 176, sass/_global.scss */
+  #decorations__paperPad {
+    height: 910px;
+    right: -410px;
+    top: -250px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* line 176, sass/_global.scss */
+  #decorations__paperPad {
+    width: 1424px;
+    height: 1489.5px;
+    right: -850px;
+    top: -370px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 200, sass/_global.scss */
+  #decorations__paperPad2 {
+    height: 640px;
+    left: -300px;
+    top: 200px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 200, sass/_global.scss */
+  #decorations__paperPad2 {
+    height: 720px;
+    left: -300px;
+    top: 200px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 200, sass/_global.scss */
+  #decorations__paperPad2 {
+    height: 780px;
+    left: -370px;
+    top: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 218, sass/_global.scss */
+  #decorations__diningPlate {
+    width: 800px;
+    top: 300px;
+    right: -460px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 218, sass/_global.scss */
+  #decorations__diningPlate {
+    width: 950px;
+    top: 270px;
+    right: -500px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 218, sass/_global.scss */
+  #decorations__diningPlate {
+    width: 1093px;
+    top: 270px;
+    right: -500px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 236, sass/_global.scss */
+  #decorations__yellowPlate {
+    height: 447px;
+    top: -120px;
+    left: -160px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 236, sass/_global.scss */
+  #decorations__yellowPlate {
+    height: 447px;
+    top: -120px;
+    left: -160px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 236, sass/_global.scss */
+  #decorations__yellowPlate {
+    width: 515px;
+    top: -150px;
+    left: -210px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 254, sass/_global.scss */
+  #decorations__headphones {
+    width: 360px;
+    top: -180px;
+    right: -90px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 254, sass/_global.scss */
+  #decorations__headphones {
+    width: 442px;
+    top: -110px;
+    right: -220px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 254, sass/_global.scss */
+  #decorations__headphones {
+    width: 512px;
+    top: -100px;
+    right: -200px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 272, sass/_global.scss */
+  #decorations__microphone {
+    height: 420px;
+    top: 230px;
+    left: -10px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 272, sass/_global.scss */
+  #decorations__microphone {
+    height: 557px;
+    top: 300px;
+    left: 40px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 272, sass/_global.scss */
+  #decorations__microphone {
+    height: 557px;
+    top: 300px;
+    left: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 290, sass/_global.scss */
+  #decorations__money-left {
+    height: 420px;
+    top: 0px;
+    left: -160px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 290, sass/_global.scss */
+  #decorations__money-left {
+    height: 500px;
+    top: -160px;
+    left: -200px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 290, sass/_global.scss */
+  #decorations__money-left {
+    height: 541px;
+    top: -160px;
+    left: -200px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 308, sass/_global.scss */
+  #decorations__money-right {
+    width: 420px;
+    top: 300px;
+    right: -130px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 308, sass/_global.scss */
+  #decorations__money-right {
+    width: 480px;
+    top: 260px;
+    right: -80px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 308, sass/_global.scss */
+  #decorations__money-right {
+    width: 520px;
+    top: 230px;
+    right: -50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 326, sass/_global.scss */
+  #decorations__gloves-left {
+    height: 560px;
+    top: 200px;
+    left: -100px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 326, sass/_global.scss */
+  #decorations__gloves-left {
+    height: 600px;
+    top: 190px;
+    left: -70px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 326, sass/_global.scss */
+  #decorations__gloves-left {
+    height: 800px;
+    top: 80px;
+    left: -140px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 344, sass/_global.scss */
+  #decorations__gloves-right {
+    height: 420px;
+    bottom: -230px;
+    right: -140px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 344, sass/_global.scss */
+  #decorations__gloves-right {
+    height: 420px;
+    bottom: -270px;
+    right: -140px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 344, sass/_global.scss */
+  #decorations__gloves-right {
+    height: 480px;
+    bottom: -300px;
+    right: -120px;
+  }
+}

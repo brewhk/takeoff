@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Takeoff Landing Page</title>
+		<!-- Favicon -->
+		<link rel="stylesheet" href="../../takeoff.css">
+		<link rel="stylesheet" href="./default.css">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		<div class="takeoff__header">
+			<!-- Header content here -->
+		</div>
+		<div class="takeoff__content-centerer-outer">
+			<div class="takeoff__content-centerer-inner">
+				<div class="takeoff__content-container">
+					<img class="takeoff__device" src="./assets/images/devices/iphone-6-plus.png" alt="">
+					<div class="takeoff__screens">
+						<!-- Add images of the screens here, one image per screen
+							<img src="./assets/images/screens/login.png" alt="">
+						-->
+					</div>
+					<div class="takeoff__texts">
+						<div class="takeoff__textblock-container">
+							<div class="takeoff__textblock">
+								<!-- Add content here -->
+							</div>
+						</div>
+					</div>
+					<!-- Add more `.takeoff__texts` blocks -->
+				</div>
+			</div>
+		</div>
+		<div class="takeoff__footer">
+			<div class="takeoff__nextSlide"></div>
+			<!-- Footer content here -->
+		</div>
+		<div class="takeoff__backgrounds">
+			<section class="takeoff__backgroundBlock">
+				<!-- Add images / decorations for your block here -->
+			</section>
+			<!-- Add more `.takeoff__backgroundBlock` blocks here -->
+		</div>
+		<script src="https://rawgit.com/Olical/EventEmitter/master/EventEmitter.min.js"></script>
+		<script src="https://rawgit.com/d4nyll/lethargy/master/lethargy.min.js"></script>
+		<script src="https://rawgit.com/d4nyll/smartscroll/master/smartscroll.js"></script>
+		<script src="../../takeoff.js"></script>
+		<script>
+		$(function() {
+		    $.takeoff();
+		});
+		</script>
+	</body>
+</html>

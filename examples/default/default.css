@@ -1,0 +1,406 @@
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-weight: normal;
+  font-style: normal;
+  src: url("assets/fonts/quattrocentosans-regular-webfont.eot");
+  src: url("assets/fonts/quattrocentosans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/quattrocentosans-regular-webfont.woff") format("woff"), url("assets/fonts/quattrocentosans-regular-webfont.ttf") format("truetype"), url("assets/fonts/quattrocentosans-regular-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-weight: normal;
+  font-style: italic;
+  src: url("assets/fonts/quattrocentosans-italic-webfont.eot");
+  src: url("assets/fonts/quattrocentosans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/quattrocentosans-italic-webfont.woff") format("woff"), url("assets/fonts/quattrocentosans-italic-webfont.ttf") format("truetype"), url("assets/fonts/quattrocentosans-italic-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-weight: bold;
+  font-style: normal;
+  src: url("assets/fonts/quattrocentosans-bold-webfont.eot");
+  src: url("assets/fonts/quattrocentosans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/quattrocentosans-bold-webfont.woff") format("woff"), url("assets/fonts/quattrocentosans-bold-webfont.ttf") format("truetype"), url("assets/fonts/quattrocentosans-bold-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-weight: bold;
+  font-style: italic;
+  src: url("assets/fonts/quattrocentosans-bolditalic-webfont.eot");
+  src: url("assets/fonts/quattrocentosans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/quattrocentosans-bolditalic-webfont.woff") format("woff"), url("assets/fonts/quattrocentosans-bolditalic-webfont.ttf") format("truetype"), url("assets/fonts/quattrocentosans-bolditalic-webfont.svg#webfont") format("svg");
+}
+/* line 1, sass/_global.scss */
+html {
+  font-family: "Quattrocento Sans", Georgia, serif;
+  color: #4f3200;
+  font-size: 10px;
+}
+
+/* line 7, sass/_global.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* line 16, sass/_global.scss */
+a,
+a:active,
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 25, sass/_global.scss */
+.takeoff__footer {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 25, sass/_global.scss */
+  .takeoff__footer {
+    text-align: center;
+    background-color: #e7e7e6;
+    text-shadow: none;
+    color: #4f3200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+/* line 36, sass/_global.scss */
+.takeoff__footer li {
+  display: inline-block;
+  margin-left: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 36, sass/_global.scss */
+  .takeoff__footer li {
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 36, sass/_global.scss */
+  .takeoff__footer li {
+    margin-left: 16px;
+    margin-top: 15px;
+  }
+}
+
+/* line 49, sass/_global.scss */
+.takeoff__footerLeft {
+  float: left;
+}
+
+/* line 53, sass/_global.scss */
+.takeoff__footerRight {
+  float: right;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 57, sass/_global.scss */
+  .takeoff__footerLeft,
+  .takeoff__footerRight {
+    float: none;
+    margin-top: 24px;
+  }
+}
+
+/* line 65, sass/_global.scss */
+#header__logo {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+@media screen and (max-width: 479px) {
+  /* line 65, sass/_global.scss */
+  #header__logo {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 65, sass/_global.scss */
+  #header__logo {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 65, sass/_global.scss */
+  #header__logo {
+    width: 83.5px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 65, sass/_global.scss */
+  #header__logo {
+    width: 83.5px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  /* line 65, sass/_global.scss */
+  #header__logo {
+    width: 83.5px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* line 65, sass/_global.scss */
+  #header__logo {
+    width: 83.5px;
+  }
+}
+
+/* line 91, sass/_global.scss */
+.takeoff__textblock-container h3 {
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+/* line 98, sass/_global.scss */
+.takeoff__textblock-container p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.25px;
+}
+
+/* line 105, sass/_global.scss */
+.appPrompt {
+  background-color: rgba(231, 231, 230, 0.2);
+  text-transform: uppercase;
+  color: #4f3200;
+  letter-spacing: 3px;
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* line 115, sass/_global.scss */
+.appPrompt .addPrompt__text {
+  display: inline;
+  font-size: 1rem;
+  line-height: 24px;
+  vertical-align: text-bottom;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+/* line 125, sass/_global.scss */
+.app-icon {
+  display: inline-block;
+  background-size: cover;
+  cursor: pointer;
+  margin-left: 15px;
+}
+/* line 130, sass/_global.scss */
+.app-icon.apple-icon {
+  background-image: url(./assets/images/icons/apple-icon.png);
+  height: 20px;
+  width: 16.5px;
+}
+/* line 135, sass/_global.scss */
+.app-icon.android-icon {
+  background-image: url(./assets/images/icons/android-icon.png);
+  height: 20px;
+  width: 16.5px;
+}
+/* line 140, sass/_global.scss */
+.app-icon.web-icon {
+  background-image: url(./assets/images/icons/web-icon.png);
+  height: 20px;
+  width: 20px;
+}
+@media screen and (min-width: 1920px) {
+  /* line 146, sass/_global.scss */
+  .app-icon.apple-icon {
+    height: 24px;
+    width: 20px;
+  }
+  /* line 150, sass/_global.scss */
+  .app-icon.android-icon {
+    height: 24px;
+    width: 20px;
+  }
+  /* line 154, sass/_global.scss */
+  .app-icon.web-icon {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+/* line 161, sass/_global.scss */
+.decoration-circle {
+  position: absolute;
+  border-radius: 50%;
+}
+@media screen and (max-width: 479px) {
+  /* line 161, sass/_global.scss */
+  .decoration-circle {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 161, sass/_global.scss */
+  .decoration-circle {
+    display: none;
+  }
+}
+
+/* line 172, sass/_global.scss */
+.yellow-circle {
+  background-color: #f0bb6b;
+}
+
+/* line 176, sass/_global.scss */
+.red-circle {
+  background-color: #e6807b;
+}
+
+/* line 180, sass/_global.scss */
+.blue-circle {
+  background-color: #4fbce8;
+}
+
+/* line 184, sass/_global.scss */
+.grey-circle {
+  background-color: #e7e7e6;
+}
+
+/* line 188, sass/_global.scss */
+#circle-1a {
+  top: -120px;
+  left: -120px;
+  width: 420px;
+  height: 420px;
+}
+
+/* line 195, sass/_global.scss */
+#circle-1b {
+  top: 460px;
+  right: -300px;
+  width: 640px;
+  height: 640px;
+}
+
+/* line 202, sass/_global.scss */
+#circle-2a {
+  top: -100px;
+  right: -40px;
+  width: 380px;
+  height: 380px;
+}
+
+/* line 209, sass/_global.scss */
+#circle-2b {
+  top: 460px;
+  left: -120px;
+  width: 480px;
+  height: 480px;
+}
+
+/* line 216, sass/_global.scss */
+#circle-3a {
+  top: -20px;
+  left: -20px;
+  width: 420px;
+  height: 420px;
+}
+
+/* line 223, sass/_global.scss */
+#circle-3b {
+  top: 300px;
+  right: -220px;
+  width: 420px;
+  height: 420px;
+}
+
+/* line 230, sass/_global.scss */
+#circle-4 {
+  width: 100vh;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* line 238, sass/_global.scss */
+#circle-5 {
+  width: 100vh;
+  height: 100vh;
+  top: -180px;
+  left: -360px;
+}
+
+/* line 245, sass/_global.scss */
+#circle-6 {
+  width: 1000px;
+  height: 1000px;
+  top: -200px;
+  left: 1020px;
+}
+
+/* line 252, sass/_global.scss */
+#circle-7a {
+  bottom: -850px;
+  left: -660px;
+  width: 1000px;
+  height: 1000px;
+}
+
+/* line 259, sass/_global.scss */
+#circle-7b {
+  top: 60px;
+  left: 1000px;
+  width: 200px;
+  height: 200px;
+}
+
+/* line 266, sass/_global.scss */
+#circle-7c {
+  top: 180px;
+  right: -60px;
+  width: 360px;
+  height: 360px;
+}
+
+/* line 275, sass/_global.scss */
+.takeoff__nextSlide {
+  position: fixed;
+  cursor: pointer;
+  padding: 0px;
+  height: 30px;
+  width: 60px;
+  left: calc(50% - 30px);
+  z-index: 30;
+}
+/* line 7, ../../sass/_mixins.scss */
+.takeoff__nextSlide:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10%;
+  width: 51%;
+  background: #4f3200;
+  -moz-transform: skew(0deg, 12deg);
+  -ms-transform: skew(0deg, 12deg);
+  -webkit-transform: skew(0deg, 12deg);
+  transform: skew(0deg, 12deg);
+}
+/* line 17, ../../sass/_mixins.scss */
+.takeoff__nextSlide:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 10%;
+  width: 50%;
+  background: #4f3200;
+  -moz-transform: skew(0deg, -12deg);
+  -ms-transform: skew(0deg, -12deg);
+  -webkit-transform: skew(0deg, -12deg);
+  transform: skew(0deg, -12deg);
+}

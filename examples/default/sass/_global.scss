@@ -1,0 +1,281 @@
+html {
+	font-family: $default-font-family;
+	color: $brown;
+	font-size: 10px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+a,
+a:active,
+a:hover,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.takeoff__footer {
+	font-weight: 700;
+	font-size: 1.2rem;
+	@include responsive(mobile) {
+		text-align: center;
+	    background-color: $grey;
+		text-shadow: none;
+		color: $brown;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	};
+	li {
+		display: inline-block;
+		margin-left: 30px;
+		@include responsive(tablet) {
+			margin-left: 40px;
+		};
+		@include responsive(mobile) {
+			margin-left: 16px;
+    		margin-top: 15px;
+		};
+	}
+}
+
+.takeoff__footerLeft {
+	float: left;
+}
+
+.takeoff__footerRight {
+	float: right;
+}
+
+.takeoff__footerLeft,
+.takeoff__footerRight {
+	@include responsive(mobile) {
+		float: none;
+		margin-top: 24px;
+	};
+}
+
+#header__logo {
+	display: block;
+	position: absolute;
+    top: 30px;
+    left: 50px;
+	@include responsive(xs) {
+		display: none;
+	};
+	@include responsive(mobile) {
+		display: none;
+	};
+	@include responsive(tablet) {
+		width: 83.5px;
+	};
+	@include responsive(desktop) {
+		width: 83.5px;
+	};
+	@include responsive(large) {
+		width: 83.5px;
+	};
+	@include responsive(xl) {
+		width: 83.5px;
+	};
+}
+
+.takeoff__textblock-container {
+	h3 {
+	    font-size: 2.2rem;
+	    line-height: 2.6rem;
+	    letter-spacing: 0.5px;
+	    margin-top: 0;
+	    margin-bottom: 15px;
+    }
+    p {
+	    font-size: 1.2rem;
+	    line-height: 1.8rem;
+	    letter-spacing: 0.25px;
+    }
+}
+
+.appPrompt {
+	background-color: $grey20;
+	text-transform: uppercase;
+	color: $brown;
+	letter-spacing: 3px;
+    display: inline-block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+	.addPrompt__text {
+		display: inline;
+		font-size: 1rem;
+		line-height: 24px;
+    	vertical-align: text-bottom;
+    	margin: 0;
+    	letter-spacing: 3px;
+	}
+}
+
+.app-icon {
+	display: inline-block;
+	background-size: cover;
+	cursor: pointer;
+	margin-left: 15px;
+	&.apple-icon {
+		background-image: url(./assets/images/icons/apple-icon.png);
+		height: 20px;
+		width: 16.5px;
+	}
+	&.android-icon {
+		background-image: url(./assets/images/icons/android-icon.png);
+		height: 20px;
+		width: 16.5px;
+	}
+	&.web-icon {
+		background-image: url(./assets/images/icons/web-icon.png);
+		height: 20px;
+		width: 20px;
+	}
+	@include responsive(xl) {
+		&.apple-icon {
+			height: 24px;
+			width: 20px;
+		}
+		&.android-icon {
+			height: 24px;
+			width: 20px;
+		}
+		&.web-icon {
+			height: 24px;
+			width: 24px;
+		}
+	}
+}
+
+.decoration-circle {
+	position: absolute;
+	border-radius: 50%;
+	@include responsive(xs) {
+	    display: none;
+	};
+	@include responsive(mobile) {
+	    display: none;
+	};
+}
+
+.yellow-circle {
+	background-color: $yellow;
+}
+
+.red-circle {
+	background-color: $red;
+}
+
+.blue-circle {
+	background-color: $blue;
+}
+
+.grey-circle {
+	background-color: $grey;
+}
+
+#circle-1a {
+    top: -120px;
+    left: -120px;
+    width: 420px;
+    height: 420px;
+}
+
+#circle-1b {
+    top: 460px;
+    right: -300px;
+    width: 640px;
+    height: 640px;
+}
+
+#circle-2a {
+    top: -100px;
+    right: -40px;
+    width: 380px;
+    height: 380px;
+}
+
+#circle-2b {
+    top: 460px;
+    left: -120px;
+    width: 480px;
+    height: 480px;
+}
+
+#circle-3a {
+    top: -20px;
+    left: -20px;
+    width: 420px;
+    height: 420px;
+}
+
+#circle-3b {
+    top: 300px;
+    right: -220px;
+    width: 420px;
+    height: 420px;
+}
+
+#circle-4 {
+    width: 100vh;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#circle-5 {
+    width: 100vh;
+    height: 100vh;
+    top: -180px;
+    left: -360px;
+}
+
+#circle-6 {
+    width: 1000px;
+    height: 1000px;
+    top: -200px;
+    left: 1020px;
+}
+
+#circle-7a {
+    bottom: -850px;
+    left: -660px;
+    width: 1000px;
+    height: 1000px;
+}
+
+#circle-7b {
+    top: 60px;
+    left: 1000px;
+    width: 200px;
+    height: 200px;
+}
+
+#circle-7c {
+    top: 180px;
+    right: -60px;
+    width: 360px;
+    height: 360px;
+}
+
+$chevron-width: 60px;
+
+.takeoff__nextSlide {
+	position: fixed;
+	cursor: pointer;
+	@include chevron($chevron-width, $brown, 12);
+    left: calc(50% - #{$chevron-width / 2});
+    z-index: 30;
+}

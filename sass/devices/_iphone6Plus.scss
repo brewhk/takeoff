@@ -1,0 +1,31 @@
+$device-height: 450px;
+$screen-height: 346px;
+$screen-width: 198px;
+
+.takeoff__device {
+	height: $device-height;
+}
+
+.takeoff__screens {
+	overflow: hidden;
+	position: absolute;
+	z-index: 5;
+	width: $screen-width;
+    height: $screen-height;
+    left: 12px;
+    top: 51px;
+	img {
+		width: 100%;
+	    position: absolute;
+	    left: 0;
+	    top: $screen-height;
+	}
+	@include responsive(xs) {
+	    left: calc(50% - 98px);
+	    top: 371px;
+	}
+	@include responsive(mobile) {
+	    left: calc(50% - 98px);
+	    top: 331px;
+	}
+}

@@ -1,0 +1,29 @@
+@import "compass/css3";
+
+$breakpoint-xs: 320px;
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-large: 1200px;
+$breakpoint-xl: 1920px;
+
+@mixin responsive($size) {
+  @if $size == xs {
+    @media screen and (max-width: $breakpoint-mobile - 1) {@content; }
+  }
+  @else if $size == mobile {
+    @media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet - 1) { @content; }
+  }
+  @else if $size == tablet {
+    @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop - 1) { @content; }
+  }
+  @else if $size == desktop {
+    @media screen and (min-width: $breakpoint-desktop) and (max-width: $breakpoint-large - 1) { @content; }
+  }
+  @else if $size == large {
+    @media screen and (min-width: $breakpoint-large) and (max-width: $breakpoint-xl - 1) { @content; }
+  }
+  @else if $size == xl {
+    @media screen and (min-width: $breakpoint-xl) { @content; }
+  }
+}
