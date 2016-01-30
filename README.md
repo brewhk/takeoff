@@ -48,18 +48,18 @@ We have created a barebone [template](https://github.com/brewhk/takeoff/tree/mas
 
  > You may wish to combine and minify the `.js` files into one file. Just be sure to keep the load order described above.
 
-Initiate and take off!
+4. Initiate and take off!
 
-    <script>
-      $(function() {
-        $.takeoff({
-          changingBackground: true,
-          slideDuration: 700
-        });
-      });
-    </script>
+     <script>
+       $(function() {
+         $.takeoff({
+           changingBackground: true,
+           slideDuration: 700
+         });
+       });
+     </script>
 
-You can pass an options object into `$.takeoff()`; the properties are detailed in the following section.
+ You can pass an options object into `$.takeoff()`; the properties are detailed in the following section.
 
 ##### Options
 
