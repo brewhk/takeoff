@@ -1,14 +1,12 @@
 # takeoff
 
-<!--![takeoff](https://cloud.githubusercontent.com/assets/13403405/11977485/47044818-a9be-11e5-82d6-2158a3482f1d.png)-->
-![takeoff-logo-full](https://cloud.githubusercontent.com/assets/13403405/11977486/47046640-a9be-11e5-9902-cfae9d32e246.png)
-
+<img src="https://cloud.githubusercontent.com/assets/13403405/11977486/47046640-a9be-11e5-9902-cfae9d32e246.png" style="width:120px" alt="Takeoff Logo">
 
 A smooth landing page to help your app take off!
 
 ### Demo
 
-A demo speaks a thousand words.
+A [demo](http://takeoff.brew.com.hk/) speaks a thousand words.
 
 ### Dependencies
 
@@ -16,6 +14,14 @@ A demo speaks a thousand words.
 * [EventEmitter](https://github.com/Olical/EventEmitter)
 * [Lethargy](https://github.com/d4nyll/lethargy) (Soft dependency)
 * [smartscroll](https://github.com/d4nyll/smartscroll)
+
+### Getting Started
+
+Download the repository and have a look at the [examples](https://github.com/brewhk/takeoff/tree/master/examples). If you get stuck, refer back to these examples.
+
+There are three main blocks of content - the screens, the text and the decorations.
+
+![takeoff-anatomy](https://cloud.githubusercontent.com/assets/13403405/12696418/905bfec0-c7a5-11e5-9f2d-f41382fe7a28.png)
 
 ### Usage
 
@@ -30,7 +36,7 @@ Include the `EventEmitter.min.js`,`lethargy.min.js`, `smartscroll.min.js`, `take
     <script src="https://rawgit.com/d4nyll/smartscroll/master/smartscroll.min.js"></script>
     <script src="/js/takeoff.min.js"></script>
 
-Structure your app as you see in `examples/default/index.html`. In fact, we recommend you start your page using `examples/default/` as your base.
+We have created a barebone template to help you get started - it contains no content but many comments to guide you along.
 
 Take off!
 
