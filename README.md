@@ -74,3 +74,10 @@ Takeoff can subtly change the background colour of your page between different s
 ###### `slideDuration`
 
 The duration of the slide animation, in miliseconds (ms).
+
+### Who is using Takeoff?
+
+Here are the landing pages that uses Takeoff! If you're using Takeoff for your landing page, please give us an email, we'd love to add you to the list!
+
+* [SKEDUO](http://www.skeduo.com/)
+* [Jigbell](http://jigbell.com/)
