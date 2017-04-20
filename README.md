@@ -41,23 +41,23 @@ We have created a barebone [template](https://github.com/brewhk/takeoff/tree/mas
 2. Add your screens, text blocks and decoration blocks. Make sure the quantity of blocks of each type is the same.
 3. Download and include the `EventEmitter.min.js`,`lethargy.min.js`, `smartscroll.min.js`, `takeoff.min.js` (***in that order***) before the `</body>` closing tag and initiate the plugin.
 
-     <script src="https://rawgit.com/Olical/EventEmitter/master/EventEmitter.min.js"></script>
-     <script src="https://rawgit.com/d4nyll/lethargy/master/lethargy.min.js"></script>
-     <script src="https://rawgit.com/d4nyll/smartscroll/master/smartscroll.min.js"></script>
-     <script src="/js/takeoff.min.js"></script>
+       <script src="https://rawgit.com/Olical/EventEmitter/master/EventEmitter.min.js"></script>
+       <script src="https://rawgit.com/d4nyll/lethargy/master/lethargy.min.js"></script>
+       <script src="https://rawgit.com/d4nyll/smartscroll/master/smartscroll.min.js"></script>
+       <script src="/js/takeoff.min.js"></script>
 
  > You may wish to combine and minify the `.js` files into one file. Just be sure to keep the load order described above.
 
 4. Initiate and take off!
 
-     <script>
-       $(function() {
-         $.takeoff({
-           changingBackground: true,
-           slideDuration: 700
+       <script>
+         $(function() {
+           $.takeoff({
+             changingBackground: true,
+             slideDuration: 700
+           });
          });
-       });
-     </script>
+       </script>
 
  You can pass an options object into `$.takeoff()`; the properties are detailed in the following section.
 
@@ -74,10 +74,3 @@ Takeoff can subtly change the background colour of your page between different s
 ###### `slideDuration`
 
 The duration of the slide animation, in miliseconds (ms).
-
-### Who is using Takeoff?
-
-Here are the landing pages that uses Takeoff! If you're using Takeoff for your landing page, please give us an email, we'd love to add you to the list!
-
-* [SKEDUO](http://www.skeduo.com/)
-* [Jigbell](http://jigbell.com/)
